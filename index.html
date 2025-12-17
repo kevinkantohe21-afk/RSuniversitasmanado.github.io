@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMRS UNIVERSITAS MANADO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="img"><img src="amik.jpg" alt="logo"></div>
+            <h1>SISTEM INFORMASI MANAJEMEN RS UNIVERSITAS MANADO</h1>
+            <h2>Manajemen Janji Temu</h2>
+        </header>
+
+        <form id="form-pendaftaran">
+            <h3>Pendaftaran Janji Temu Baru</h3>
+            <label for="nama_pasien">Nama Pasien:</label>
+            <input type="text" id="nama_pasien" required>
+            
+            <label for="dokter">Pilih Dokter:</label>
+            <select id="dokter" required>
+                <option value="dr. Aulia (Umum)">dr. Kevin (Umum)</option>
+                <option value="dr. Bima (Gigi)">dr. Ferdian (Gigi)</option>
+                <option value="dr. Candra (Spesialis Anak)">dr. Bilgis (Spesialis Anak)</option>
+            </select>
+            
+            <label for="tanggal">Tanggal & Waktu:</label>
+            <input type="datetime-local" id="tanggal" required>
+            
+            <button type="submit">Daftar</button>
+        </form>
+
+        <h3>Daftar Janji Temu Aktif</h3>
+        
+        <table id="tabel-janji-temu">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Pasien</th>
+                    <th>Dokter</th>
+                    <th>Waktu</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="data-body">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

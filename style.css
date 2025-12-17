@@ -40,6 +40,12 @@
             color: #004896;
         }
 
+        header p {
+            text-align: center;
+            margin-top: -20px;
+            margin-bottom: 60px;
+        }
+
 
         /* Form Pendaftaran */
         #form-pendaftaran {
